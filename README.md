@@ -55,7 +55,7 @@ python -u main.py --mode=decode \
 ### Data Format
 You must make data as the following format.
 
-You can split big data corpus as many smaller files. such as ``train_\*.json''  for faster data reading (*data.py* will get all file names by glob()).
+You can split big data corpus as many smaller files. such as ``train_\*.json''  for faster data reading (*batcher.py* will get all file names by glob()).
 
 ```
 Every line in the data file is a JSON string which can be loaded as a dict.
@@ -75,7 +75,7 @@ For example:
     "relation_user": [[2, 0]]
 }
 ```
-You can find more information in *data.py* or our paper.
+You can find more information in *batcher.py* or our paper.
 
 <br>
 
